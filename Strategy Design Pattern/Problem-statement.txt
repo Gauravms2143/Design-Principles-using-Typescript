@@ -1,0 +1,36 @@
+Title: Customer-Service Management System
+-----------------------------------------------
+Problem Statement:
+In the context of managing services for different types of customers, the 
+Customer Service Management System aims to provide possble service provision for 
+VIP, Normal, and Basic customers.
+
+Description:
+The Customer Service Management System addresses the needs of service-oriented
+organization. 
+The system includes the following key components:
+1. Customer Types:
+   - VIP Customer: Represents high-value customers with premium service requirements.
+   - Normal Customer: Represents standard customers with typical service requirements.
+   - Basic Customer: Represents budget-conscious customers with basic service needs.
+2. Customer Interface:
+   - The system defines the `ICustomer` interface, outlining the common 
+     attributes and methods expected for all customer types.
+   - Each customer type (VIP, Normal, Basic) extends the abstract `Customer` 
+     class and implements the `ICustomer` interface.
+3. Service Management:
+   - The system defines the `IService` interface, specifying the structure and 
+     functionality of individual services.
+   - Service classes such as `ServiceA`, `ServiceB`, and `ServiceC`
+     implement the `IService` interface, providing concrete implementations 
+     of various services offered by the organization.
+4. Service Provisioning:
+   - Upon instantiation, each customer type receives default service
+     packages corresponding to its category.
+   - The system allows customers to update their service packages by
+     passing arrays of desired services to the appropriate method.
+5. Implementation:
+   - The system leverages TypeScript to define interfaces, abstract 
+     classes, and concrete implementations of customer types and services.
+   - Through modular design and encapsulation, the system promotes code
+     reusability, maintainability, and scalability.
